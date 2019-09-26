@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="utf-8">
+  <title>jQuery datos de un cliente</title>
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/jquerygetcliente.js"></script>
+        
+</head>
+<body>
+
+<div>
+	<h1>Datos de un Cliente</h1>
+	<section>
+		<form action="/clientes" id="searchForm">
+			Id Cliente: <input type="text" id="idCliente" name="idCliente">
+			<br>
+			<br>
+			<!-- the result of the search will be rendered inside this div -->
+			<div id="result"></div>
+			<br><br>
+			<input type="submit" value="Buscar Cliente">
+		</form>
+		
+	</section>
+</div>
+
+
+</body>
+</html>

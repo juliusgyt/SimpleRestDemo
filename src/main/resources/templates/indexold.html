@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Simple REST Demo</title>
+<link rel="stylesheet" type="text/css" href="/css/custom.css"/>
+
+<script type="text/javascript" src="/js/custom.js"></script>
+</head>
+<body>
+
+	<h1>Servicios REST con Spring Boot</h1>
+	
+	<p>Aplicación  DEMO con la implementación e invocación de un servicio REST con Spring Boot </p>
+
+	<br>
+    <br>
+    <p>Servicio REST remoto (http://rest-service.guides.spring.io/greeting) invocado con jQuery </p>
+<!--     <a href="jqueryrestclient.html">jQueryRestClient</a> -->
+	<a href="/jquery">jQueryRestClient</a>
+    <br>
+    <br>
+    <p>Servicio REST remoto (http://rest-service.guides.spring.io/greeting) invocado con AngularJS </p>
+<!--     <a href="angularrestclient.html">angularRestClient</a> -->
+    <a href="/angular">angularRestClient</a>
+    <br>
+    <br>
+    <br>
+<!--     <a href="test.html">test</a> -->
+	<a href="/test">test</a>
+    <br>
+    <br>
+    <p>Servicio REST local (http://localhost:8080/clientes/3) invocado con jQuery </p>
+    <a href="/jquery2">jQueryRestClient Local</a>
+    <br>
+    <br>
+    <p>Servicio REST local (http://localhost:8080/clientes/3) invocado con AngularJS </p>
+    <a href="/angular2">angularRestClient Local</a>
+    <br>
+    <br>
+    <p>Servicio REST insert (http://localhost:8080/clientes/) invocado con jQuery </p>
+    <a href="/jqueryinsert">jQuery Insert</a>
+	<form action="/jqueryinsert">
+  		Nombre:<br>
+  		<input type="text" name="firstname" value="Mickey"><br><br>
+<!--   		Last name:<br> -->
+<!--   		<input type="text" name="lastname" value="Mouse"><br><br> -->
+  		<input type="submit" value="jQuery Insert">
+	</form>
+	<br>
+    <br>
+    <p>Servicio REST insert (http://localhost:8080/clientes/) invocado con AngularJS </p>
+    <a href="/angularinsert">Angular Insert</a>
+    <br>
+    <br>
+    <p>Servicio REST insert (http://localhost:8080/clientes/) invocado con AngularJS </p>
+    <a href="/angulardelete">Angular Delete</a>
+    <br>
+    <br>
+	<div>
+		<input type="button" id="btn1" class="button" onclick="myFunction()" value="Button1"/>
+		<input type="button" id="btn2" value="Button2"/>
+	</div>
+
+</body>
+</html>

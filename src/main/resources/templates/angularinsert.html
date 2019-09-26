@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="utf-8">
+  <title>AngularJS post demo</title>
+</head>
+<body>
+
+<div ng-app="app" ng-controller="appCtrl as vm">
+	<h1>Crear un Cliente</h1>
+	<section>
+		<form ng-submit="vm.enviar()">
+		Nombre: <input type="text" ng-model="vm.fdatos.nombre" placeholder="Pedro Vargas">
+		<br>
+		<br>
+		<input type="submit" value="Crear Cliente">
+		</form>
+	</section>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+<script type="text/javascript" src="/js/angularinsert.js"></script>
+ 
+</body>
+</html>

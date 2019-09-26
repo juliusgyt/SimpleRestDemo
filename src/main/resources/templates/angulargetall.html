@@ -1,0 +1,25 @@
+<!doctype html>
+<html ng-app="demo">
+	<head>
+		<title>Consumiendo REST con AngularJS</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    	<script type="text/javascript" src="/js/angulargetall.js"></script>
+	</head>
+
+	<body>
+		<div ng-controller="Hello as vm">
+		
+<!-- 		los clientes son: {{ vm.clientes }} -->
+
+				<table ng-repeat="cliente in vm.clientes" >
+		    		<tr>
+		    			<td>{{cliente.idCliente}}</td>		    			
+		    			<td>{{ cliente.nombre }}</td>
+<!-- 		    			<td onclick="alert('borrar el cliente')">eliminar</td> -->
+<!-- 		    			<td><input type="button" value="Detalle" ng-click="vm.detalle(5)"/></td> -->
+		    		</tr>
+		    	</table>
+    
+    	</div>
+	</body>
+</html>

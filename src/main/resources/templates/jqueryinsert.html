@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+  <meta charset="utf-8">
+  <title>Insertar Cliente con jQuery</title>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+  <script type="text/javascript" src="/js/jqueryinsert.js"></script>
+</head>
+<body>
+ 
+	<section>
+		<form action="/clientes" id="insertForm">
+		  <input type="text" name="cliente" placeholder='{"nombre": "Pedro Vargas"}'>
+		  <br><br>
+		  <input type="submit" value="Crear Cliente">
+		</form>
+		<br><br>
+		<!-- the result of the search will be rendered inside this div -->
+		<div id="result"></div>
+	</section> 
+
+ 
+</body>
+</html>
